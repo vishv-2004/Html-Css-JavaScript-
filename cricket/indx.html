@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="header">
+          <h1 id="Run">Run Counter</h1>
+        </div>
+        <form   class="form_container" method="post">
+          <div class="input" id="input-1">
+            <input
+              type="text"
+              name="a_name"
+              id="name_a"
+              class="form"
+              value="india"
+              placeholder="Enter Name Of Team A"
+              
+            />
+            <input
+              type="text"
+              name="b_name"
+              id="name_b"
+              class="form"
+              value="pakistan"
+              placeholder="Enter Name Of Team B"
+              
+            />
+            <input
+              type="number"
+              name="over"
+              id="over"
+              class="form"
+              value=10
+              placeholder="Enter How Much Over Of The Game"
+              
+            />
+            <div class="wide_container">
+              <label for="wide_ball">You Want TO Count Run Of Wide Ball </label>
+              <select name="wideball" id="wide_yes" style="padding: 5px 10px; margin-left: 1rem;">
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+              </select>
+              <!-- <input
+                type="checkbox"
+                name="wideball"
+                id="wide_yes"
+                value="yes"
+                style="margin-left: 13px"
+                checked
+              /><span class="op">yes</span> -->
+              
+            </div>
+            <div class="wide_container">
+                <label for="noball">You Want TO Count Run Of No Ball And Free Hit :  </label>
+                <select name="noball" id="noball_yes" style="padding: 5px 10px; margin-left: 1rem;">
+                  <option value="yes">yes</option>
+                  <option value="no">no</option>
+                </select>
+                <!-- <input
+                  type="radio"
+                  name="noball"
+                  id="noball_yes"
+                  value="yes"
+                  style="margin-left: 13px"
+                  
+                /><span class="op">yes</span>
+                
+                <input
+                  type="radio"
+                  name="noball"
+                  id="noball_yes"
+                  value="no"
+                  style="margin-left: 13px"
+                  /><span class="op">No</span>-->
+            </div> 
+            <div class="button_group">
+            <button type="button" class="btn" id="subButton"  onclick="myfunction()">submit</button>
+            <button type="reset" class="btn" style="margin-left: 3rem;">Reset</button>
+              
+            </div>
+          </div>
+         
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

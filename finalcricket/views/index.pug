@@ -1,0 +1,30 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Cricket
+    link(rel='stylesheet', href='./static/style.css')
+  body
+    .container
+      .card
+        .header
+          h1 Run Counter
+        form.form_container(action='/submit', method='post')
+          .input
+            input#name_a.form(type='text', name='a_name', placeholder='Enter Name Of Team A', required='')
+            input#name_b.form(type='text', name='b_name', placeholder='Enter Name Of Team B', required='')
+            input#over.form(type='number', name='over', placeholder='Enter How Much Over Of The Game', required='')
+            .wide_container
+              label(for='wide_ball') You Want TO Count Run Of Wide Ball 
+              input#wide_yes(type='checkbox', name='wideball', value='yes', style='margin-left: 13px', checked='')
+              span.op yes
+            .wide_container
+              label(for='wide_ball') You Want TO Count Run Of No Ball And Free Hit  
+              input#wide_yes(type='checkbox', name='wideball', value='yes', style='margin-left: 13px', checked='')
+              span.op yes
+            .button_group
+              button.btn(type='submit') Submit
+              button.btn(type='reset', style='margin-left: 3rem;') Reset
+    script(src='./static/script.js')

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            position: relative;
+         }
+      
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            overflow-x: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(217, 229, 229);
+            animation-name: vishv1;
+            animation-timing-function: ease;
+            animation-duration: 5s;
+           
+        }
+        .image {
+            width: 25vw;
+            height: 25vh;
+            animation-name: vishv;
+            animation-timing-function: ease;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+           
+        }
+   
+        @keyframes vishv{
+            0%{
+                width: 0vw;
+                height: 0vh;
+                /* backdrop-filter: blur(5px); */
+                z-index: 1;
+               
+            }
+            /* 25%{
+                width: 75vw;
+                height: 75vh;
+                /* backdrop-filter: blur(10px); 
+                z-index: 1;
+              
+            } */
+            75%{
+                width: 100vw;
+                height: 100vh;
+                /* backdrop-filter: blur(15px); */
+                z-index: 1;
+                
+            }
+            100%{
+                width: 0vw;
+                height: 0vh;
+                z-index: -1;
+               
+            }   
+        }
+       
+        .text{
+            
+            position: absolute;
+            top: 5rem;
+            left: 5rem;
+            animation-name: hh;
+            animation-timing-function: ease;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes hh {
+            0%{
+             width: 0px;
+             height: 0px;
+             overflow: hidden;
+
+            }
+            25%{
+                width: 0px;
+             height: 0px;
+             overflow: hidden;
+
+            }
+            75%{
+                width: 0px;
+             height: 0px;
+             overflow: hidden;
+
+            }
+            100%{
+               
+             width: 90%;
+             height: 85%;
+             overflow: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="R.jpg" alt="">
+        </div>
+        
+    </div>
+    <div class="text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam at ratione commodi, quas distinctio ea accusamus quidem. Voluptates maiores veritatis totam velit pariatur adipisci dignissimos, voluptatem reiciendis officiis corporis. Accusamus repellat asperiores sequi harum inventore, dolorem nostrum quas explicabo in excepturi magni saepe nihil non enim, ut recusandae. Molestiae obcaecati cumque tenetur nulla qui eveniet rerum, delectus cupiditate ut exercitationem, nobis est repellendus, et corrupti! Modi consequatur veritatis iure nulla quo ratione aliquid saepe, nisi amet. Soluta facilis harum dolor nesciunt vel impedit voluptate, dolorum doloremque provident adipisci aperiam, nemo hic repellat. Aliquam nobis dolorum iure quidem minima eius placeat.
+    </div>
+</body>
+</html>

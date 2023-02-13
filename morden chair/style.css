@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#wrapper {
+  overflow-x: hidden;
+  width: 100vw;
+  overflow-y: auto;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #fff;
+  background-color: #1f2029;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: none;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #fff;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+  top: 0px;
+}
+.doublegame {
+  margin-top: 2rem;
+  height: 150px;
+}
+.desc-sec {
+  transition: all 250ms linear;
+  opacity: 0;
+  overflow: hidden;
+ }
+.acc2 {
+  
+  top: 150px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+
+}
+
+#acc-1:checked ~ .desc-sec.acc1 {
+  opacity: 1;
+}
+
+#acc-2:checked ~ .desc-sec.acc2 {
+  opacity: 1;
+}
+
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  visibility: hidden;
+}
+
+#acc-2 + label {
+    margin-left: 2rem;
+}
+.desc-2{
+    opacity: 0.4;
+}

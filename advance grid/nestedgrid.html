@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            overflow-x: hidden;
+            height: 1000px;
+            display: grid;
+            background-color: antiquewhite;
+            border: 2px solid black;
+            grid-gap: 4px;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-areas: 
+            "one two"
+            "three four"
+            "five four"
+            "six four"
+            "seven eight"
+            "nine nine";
+        }
+
+        .box{
+            background-color: aquamarine;
+            border: 2px solid red;
+        }
+        #box-4{
+          grid-area: four;
+            display: grid;
+            border: none;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-gap: 2px;
+        }
+        #box-5{
+          grid-area: five;
+            
+        }
+        #box-6{
+          grid-area: six;
+            
+        }
+        #box-7{
+          grid-area: seven;
+            
+        }
+        #box-8{
+          grid-area: eight;
+            
+        }
+        #box-9{
+          grid-area: nine;
+            
+        }
+        #box-1{
+          grid-area: one;
+            
+        }
+        #box-2{
+          grid-area: two;
+            
+        }
+        #box-3{
+          grid-area: three;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="box" id="box-1">box-1</div>
+      <div class="box" id="box-2">box-2</div>
+      <div class="box" id="box-3">box-3</div>
+      <div class="box" id="box-4">
+        <div class="box" id="inbox-1">inbox-1</div>
+        <div class="box" id="inbox-2">inbox-2</div>
+        <div class="box" id="inbox-3">inbox-3</div>
+        <div class="box" id="inbox-4">inbox-4</div>
+      </div>
+      <div class="box" id="box-5">box-5</div>
+      <div class="box" id="box-6">box-6</div>
+      <div class="box" id="box-7">box-7</div>
+      <div class="box" id="box-8">box-8</div>
+      <div class="box" id="box-9">box-9</div>
+        
+        
+    </div>
+</body>
+</html>

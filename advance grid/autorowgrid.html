@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-rows: 60px auto 60px;
+            grid-template-columns: 100px auto 100px;
+            grid-gap: 4px;
+            grid-template-areas:
+            "header header header"
+            "aside main section"
+            "footer footer footer";
+            border: 2px solid black;
+            background-color:antiquewhite;
+        }
+        .box{
+            border: 2px solid black;
+            background-color:whitesmoke;
+        }
+        #box-1{
+            grid-area: header;
+            
+        }
+        #box-1 ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #box-1 ul li{
+                list-style: none;
+                letter-spacing: 2px;
+                margin: 20px 5px;
+                
+        }
+        #box-2{
+            grid-area: aside;
+        }
+        #box-3{
+            
+            grid-area: main;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #box-4{
+            grid-area: section;
+        }
+        #box-5{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">
+            <ul>
+                <li>home</li>
+                <li>contect us</li>
+                <li>about us</li>
+                <li>serch here</li>
+            </ul>
+        </div>
+        <div class="box" id="box-2">
+            <ul>
+                <li>vishv</li>
+                <li>fuleshbhai</li>
+                <li>geeta</li>
+                <li>vraj</li>
+                <li>shankar god</li>
+            </ul>
+        </div>
+        <div class="box" id="box-3">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod esse repellat obcaecati eligendi qui ut unde adipisci temporibus nam dicta. Ex labore voluptas consectetur quisquam numquam, voluptates ut quas blanditiis facere ratione modi dolore qui sed? Culpa voluptatem id inventore mollitia magni. Ipsum facere ad iusto magni incidunt dolore optio, aut nemo porro nihil officia nostrum, ducimus consequuntur magnam deleniti ratione alias earum. Reprehenderit minus explicabo praesentium suscipit earum in ipsum laboriosam. Iste et possimus quae blanditiis ratione corporis maiores atque placeat quo exercitationem, sunt obcaecati pariatur quod impedit dolore animi esse officiis rem dicta qui explicabo velit. Eius beatae labore perspiciatis perferendis, temporibus porro minus repellendus non consectetur magnam accusamus ipsum reprehenderit aspernatur eveniet incidunt maiores quidem, corporis, suscipit impedit voluptate nam consequatur laudantium tempore vero. Dolor earum molestias reiciendis rerum quae ullam eum architecto quibusdam, quam eaque sunt at facere! Atque ipsa consectetur, perferendis esse vitae doloremque ea eveniet labore iusto quod blanditiis dignissimos, cum error quaerat magnam nihil voluptatibus similique earum culpa mollitia optio quisquam. Explicabo, adipisci vitae dolorem magnam beatae libero earum maiores mollitia eius magni fugiat, quisquam accusantium asperiores sequi sint. Ea dolorum atque accusantium dolore ipsam quidem, perferendis illum, voluptatibus porro quos recusandae! Voluptates ad ex sunt nam ducimus magnam enim libero eos consequatur labore quis fugit consectetur pariatur laudantium nulla perspiciatis necessitatibus voluptas, cupiditate exercitationem! Totam sit quasi aliquid laudantium excepturi aperiam, eum officia incidunt eaque ipsum numquam adipisci debitis molestiae minima cumque, accusamus repellat voluptates maxime modi repellendus. Ducimus similique unde, iure totam rem voluptas incidunt ullam. Eos inventore recusandae facere ea, voluptas impedit doloremque nesciunt tempore iure exercitationem ex fugit culpa qui nulla sit eius cupiditate placeat, fuga maiores similique beatae dolor repellendus odio. Voluptatibus numquam reprehenderit officia! Accusamus, similique. Ipsam, necessitatibus? In aliquam asperiores delectus corrupti laudantium, fuga unde voluptate placeat architecto! Vel repellendus tenetur minima totam distinctio assumenda, expedita delectus voluptas nulla molestias iure dicta perspiciatis doloribus quis autem quia commodi obcaecati excepturi? Necessitatibus aliquam possimus sapiente aspernatur aliquid. Quasi magni et reiciendis dolor voluptate, maxime tempore rerum. Exercitationem beatae tempore ea! Nisi, tenetur fuga? Ducimus beatae odit accusantium non consequatur dolorum itaque commodi, voluptas excepturi. Consectetur, praesentium nam. Nobis modi rerum laboriosam ducimus dolor error hic nemo magnam libero tenetur velit porro optio vero, ratione repellat esse odio facilis dignissimos quasi quas. Aperiam harum dolorum quo a omnis cum magni repellat quae eaque eius ipsum labore, explicabo, cumque nihil laudantium nobis. Suscipit nisi corporis inventore temporibus iure doloribus amet provident, ipsa animi sed veniam nesciunt eius dignissimos officia sunt quia debitis esse rem vel id quod minus aspernatur ipsam. Sequi nisi quisquam soluta ipsam dolor distinctio voluptates incidunt adipisci laborum? Sunt suscipit sint sed laudantium nemo porro voluptates eos possimus aut voluptatibus earum architecto, voluptatum cupiditate aliquid. Repudiandae ad quia quaerat harum atque odio cupiditate dolore quibusdam magnam voluptates ipsam, necessitatibus molestiae esse corrupti cum illum repellendus unde. Ipsa expedita eaque facilis ab, cumque eius, atque quisquam fugit repudiandae necessitatibus labore voluptatum et beatae, tempore quos a velit.
+        </div>
+        <div class="box" id="box-4">box-4</div>
+        <div class="box" id="box-5">this all copyright &copy;| are reserved</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Toc Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrapper  min-h-screen"> 
+       <!-- nav bar -->
+       <nav class="bg-black h-10 flex items-center justify-center">
+        <ul>
+            <li class="text-white word_space">Tic Toc Toe Play With Me</li>
+        </ul>
+       </nav>
+       <!-- game container -->
+       <div class="flex  mt-16  justify-between">
+        <!-- tic toc toe container -->
+        <div class="w-[46%] flex justify-center items-center">
+            <div class="gameContainer  self-center">
+                <div class="border cursor-pointer hover:bg-[#f2f2f2] border-slate-900 bt bl flex items-center justify-center ">
+                    <span class="text-[8vw]"></span>
+                </div>
+                <div class="border cursor-pointer hover:bg-[#f2f2f2] bt border-slate-900  flex items-center justify-center">
+                    <span class="text-[8vw]"></span>
+                </div>
+                <div class="border cursor-pointer hover:bg-[#f2f2f2] bt br border-slate-900 flex items-center justify-center">
+                    <span class="text-[8vw]"></span>
+                </div>
+                <div class="border cursor-pointer hover:bg-[#f2f2f2] bl border-slate-900 flex items-center justify-center">
+                    <span class="text-[8vw]"></span>
+                </div>
+                <div class="border cursor-pointer hover:bg-[#f2f2f2] border-slate-900 flex items-center justify-center">
+                    <span class="text-[8vw]"></span>
+                </div>
+                <div class="border cursor-pointer hover:bg-[#f2f2f2] br border-slate-900 flex items-center justify-center">
+                    <span class="text-[8vw]"></span>
+                </div>
+                <div class="border cursor-pointer hover:bg-[#f2f2f2] bb bl border-slate-900 flex items-center justify-center">
+                    <span class="text-[8vw]"></span>
+                </div>
+                <div class="border cursor-pointer hover:bg-[#f2f2f2] bb border-slate-900 flex items-center justify-center">
+                    <span class="text-[8vw]"></span>
+                </div>
+                <div class="border cursor-pointer hover:bg-[#f2f2f2] bb br border-slate-900 flex items-center justify-center">
+                    <span class="text-[8vw]"></span>
+                </div>
+            </div>
+        </div>
+        <!-- game info container -->
+        <div class="flex  w-[46%]">
+            <div class="flex flex-col">
+                <h1>Welcome To Tic Toc Toe </h1>
+            <span>Turn Of the X  
+                <div class="box">
+                <button class=" text-white text-lg mt-2 btn relative hover:text-black z-20">Reset</button>
+              </div>
+            </span>
+           
+           
+            </div>
+        </div>
+       </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
