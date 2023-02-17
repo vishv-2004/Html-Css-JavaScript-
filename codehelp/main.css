@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    overflow-x: hidden;
+    transition: all;
+    transition-duration: 0.3s;
+}
+ .apnaanimation{
+ animation: updown 2.5s linear  infinite  ;
+
+}
+@keyframes updown {
+    0%{
+        top: -36px;
+
+    }
+    50%{
+        top: -40px;
+    }
+    100%{
+        top: -36px;
+    }
+} 
+.apnaanimation2{
+    animation: updown1 2.5s linear  infinite  ;
+
+   }
+   @keyframes updown1 {
+       0%{
+           top: 35%;
+   
+       }
+       50%{
+           top: 34%;
+       }
+       100%{
+           top: 35%;
+       }
+   } 
+   .apnaanimation3{
+    animation: updown2 2.5s linear  infinite  ;
+
+   }
+   @keyframes updown2 {
+       0%{
+           top: 38%;
+   
+       }
+       50%{
+           top: 37%;
+       }
+       100%{
+           top: 38%;
+       }
+   } 
+.lineargrd{
+    background-image: linear-gradient(to right,white 50%,rgb(238, 222, 238) );
+}
+.revlineargrd{
+    background-image: linear-gradient(to left,white 50%,rgb(255, 243, 255) );
+}
+.border-op{
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.gradline{
+    background-image: linear-gradient(to right,#818597,white 40%);
+}
+.linegrd{
+    background-image: linear-gradient(to left,rgb(102,116,204),white 80%);
+}
+.linegrd2{
+    background-image: linear-gradient(to left,rgb(102,116,204),white 50%);
+}

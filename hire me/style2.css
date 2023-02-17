@@ -1,0 +1,31 @@
+.dd{
+    position: relative;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    padding: 10px 27px;
+    z-index: 3;
+    overflow: hidden;
+}
+.dd::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    transition: all;
+    transition-duration: 0.3s;
+    transform-origin: left;
+    transition-timing-function:linear;
+    transform: scaleX(0);
+    background-color:white ;
+    border-radius: 7px;
+    z-index: -1;
+}
+.dd:hover::before{
+    transform: scaleX(1);
+}
+.dd:hover{
+    color: black;
+}

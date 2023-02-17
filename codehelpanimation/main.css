@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.wrapper{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.animay{
+    animation: roundround 30s linear  infinite  ;
+}
+@keyframes roundround {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.eleani{
+    animation: roundround1 30s linear  infinite  ;
+}
+@keyframes roundround1 {
+    from{
+        transform: rotate(-0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+.animayrev{
+    animation: roundround3 30s linear  infinite  ;
+}
+@keyframes roundround3 {
+    from{
+        transform: rotate(-0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+    }
+}
+.eleanirev{
+    animation: roundround4 30s linear  infinite  ;
+}
+@keyframes roundround4 {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
