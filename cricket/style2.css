@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Rowdies&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rowdies", cursive;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("images/bg_image4.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #1f1f1f9a;
+  z-index: 2;
+}
+.relative {
+  position: relative;
+}
+.z-3 {
+  z-index: 3;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.button_group {
+  position: relative;
+}
+.btn {
+  position: relative;
+  background-color: green;
+  color: rgb(0, 0, 0);
+  padding: 0.6rem 1rem;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  z-index: 2;
+  border: none;
+  border-radius: 8px;
+}
+
+.btn::before {
+  border-radius: 8px;
+  content: "";
+  position: absolute;
+  background-color: white;
+  top: 0rem;
+  left: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  z-index: -1;
+  transform: scaleX(0);
+  transition-property: transform;
+  transition-duration: 0.8s;
+  transform-origin: left;
+}
+.btn:hover::before {
+  transform: scaleX(1);
+}

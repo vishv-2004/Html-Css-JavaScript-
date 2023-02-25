@@ -1,108 +1,72 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.wrapper{
-    overflow-x: hidden;
-    overflow-y: auto;
+.wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-.word_space{
-    word-spacing: 0.3rem;
+.word_space {
+  word-spacing: 0.3rem;
 }
-.gameContainer{
-    display: grid;
-    grid-template-columns: repeat(3,10vw);
-    grid-template-rows: repeat(3,10vw);
-
+.gameContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
 }
-.bt{
-    border-top: 0;
+.bt {
+  border-top: 0;
 }
-.bl{
-    border-left: 0;
+.bl {
+  border-left: 0;
 }
-.br{
-    border-right: 0;
+.br {
+  border-right: 0;
 }
-.bb{
-    border-bottom: 0;
+.bb {
+  border-bottom: 0;
 }
 
 button {
-    width: 113px;
-    height: 50px;
-    background: #625fa7fc;
-    cursor:pointer;
-    border-radius: 25px;
-    overflow: hidden;
-  }
-.btn::before{
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    transform: scaleX(0);
-    background-color: #f2f2f2;
-    transition: all;
-    transition-duration: 0.5s;
-    transition-timing-function: ease-out;
-    transform-origin: left;
-    z-index: -1;
-    border-radius: 25px;
+  width: 113px;
+  height: 50px;
+  background: #625fa7fc;
+  cursor: pointer;
+  border-radius: 25px;
+  overflow: hidden;
 }
-.btn:hover::before{
-    transform: scaleX(1);
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  transform: scaleX(0);
+  background-color: #f2f2f2;
+  transition: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+  transform-origin: left;
+  z-index: -1;
+  border-radius: 25px;
 }
-/* 
-button {
-	display: inline-block;
-	padding: .75rem 1.25rem;
-	border-radius: 10rem;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 1rem;
-	letter-spacing: .15rem;
-	transition: all .3s;
-	position: relative;
-	overflow: hidden;
-	z-index: 1
-    
+.btn:hover::before {
+  transform: scaleX(1);
 }
-
-	button::after {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: #0cf;
-		border-radius: 10rem;
-		z-index: -2;
-	}
-	button::before {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 0%;
-		height: 100%;
-		background-color: darken(#0cf, 15%);
-		transition: all .3s;
-		border-radius: 10rem;
-		z-index: -1;
-	}
-	button:hover {
-		color: #fff;
-       
-	}
-    button::before {
-        width: 100%;
-    } */
+.apnazindex {
+  z-index: -1;
+}
+.visible {
+  display: inline-block;
+}
+#ani {
+  transition-property: all;
+  transition-duration: 0.53s;
+  transition-timing-function: ease-in-out;
+}

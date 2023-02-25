@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <!-- heading -->
+        <div class="head">
+          <h1 class="heading">The Rock Team : <span id="teamname"></span></h1>
+          <a class="home" href="indx.html">Home</a>
+        </div>
+        <div class="head1">
+          <div>
+            
+            <h1 class="heading">
+              Score : <span id="runupdate">0</span> /
+              <span id="wicketupdate">0</span>
+            </h1>
+            <p class="apnatext">Frist Team inning</p>
+            <p class="apnatext">No Ball : <span id="noballvalue"></span></p>
+            <p class="apnatext">Wide Ball : <span id="wideballvalue"></span></p>
+            <p class="apnatext">Dot Ball : <span id="dotballvalue"></span></p>
+          </div>
+          <div class="instru">
+            <p>give input -1 for NoBall</p>
+            <p>give input -2 for wideBall</p>
+            <p>give input -3 for wicket</p>
+          </div>
+        </div>
+
+        <div class="overcontainer">
+          <div class="row">
+            <input
+              type="number"
+              name="run"
+              id="run"
+              placeholder="0.0"
+              class="row_member"
+            />
+            <input
+              type="number"
+              name="run"
+              id="run1"
+              placeholder="0.1"
+              class="row_member"
+            />
+            <input
+              type="number"
+              name="run"
+              id="run2"
+              placeholder="0.2"
+              class="row_member"
+            />
+            <input
+              type="number"
+              name="run"
+              id="run3"
+              placeholder="0.3"
+              class="row_member"
+            />
+            <input
+              type="number"
+              name="run"
+              id="run4"
+              placeholder="0.4"
+              class="row_member"
+            />
+            <input
+              type="number"
+              name="run"
+              id="run5"
+              placeholder="0.5"
+              class="row_member"
+            />
+          </div>
+        </div>
+        <button class="btn" id="nextteam">Next</button>
+      </div>
+    </div>
+  </body>
+</html>

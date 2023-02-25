@@ -1,15 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index html</title>
-</head>
-<body>
-    <div class="container">
-        <span id="huhu"></span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="container relative">
+      <div class="relative z-3 flex">
+        <div>
+          <label for="choose_bat">Which Team Have Frist Batting : </label>
+          <select
+            name="choosebat"
+            id="choosebat"
+            style="padding: 5px 10px; margin-left: 1rem"
+          >
+            <option id="team_1"></option>
+            <option id="team_2"></option>
+          </select>
+        </div>
+        <div class="button_group">
+          <button type="button" class="btn a" id="subteamname">submit</button>
+        </div>
+      </div>
     </div>
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
