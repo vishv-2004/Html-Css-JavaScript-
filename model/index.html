@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interview Model</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="contianer bg-black flex justify-center items-center relative z-[10]"
+    >
+      <!-- circle 1 -->
+      <div
+        class="absolute w-[13em] h-[13em] rounded-full bg-orange-500 top-[3%] left-[30%] ani1"
+      ></div>
+      <div
+        class="absolute w-[16em] h-[16em] rounded-full bg-green-500 bottom-[2%] right-[28%] ani2"
+      ></div>
+
+      <!-- card -->
+      <div
+        class="cardcontainer flex flex-col justify-evenly items-center space-y-12 p-5 backdrop-blur-[15px] bg-[#ffffff1a] border-[2px] border-solid border-[#ffffff30] rounded-lg px-[50px] py-[40px]"
+      >
+        <div class="w-[160px] h-[160px] rounded-full cursor-pointer">
+          <img
+            src="images/bg_image2.jpg"
+            alt=""
+            class="w-[100%] h-[100%] rounded-full"
+          />
+        </div>
+        <div>
+          <h1 class="text-white font-[500] text-3xl tracking-[1px]">
+            Vishv Patel
+          </h1>
+        </div>
+        <div>
+          <h2
+            class="font-[500] text-xl text-[#ffffff85] text-center tracking-[1px] max-w-[303px]"
+          >
+            Founder, SilverOak University
+          </h2>
+        </div>
+        <!-- button group -->
+        <div class="flex space-x-3">
+          <button
+            class="flex justify-center items-center gap-4 px-[12px] py-[9px] border-[2px] border-solid border-[#ffffffb9] rounded-[7px] text-[#ffffffb9] hover:bg-[#ffffffb9] hover:text-[#131313] text-sm"
+            shareprofile
+          >
+            <i class="fa-solid fa-share"></i>Share My Profile
+          </button>
+          <button
+            class="flex justify-center items-center gap-4 px-[38px] py-[9px] border-[2px] border-solid border-[#ffffffb9] rounded-[7px] text-[#ffffffb9] hover:bg-[#ffffffb9] hover:text-[#131313] text-sm"
+          >
+            Follow Me
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="absolute z-[20] bg-[#5f5f5f83] top-0 left-0 right-0 bottom-0 activey"
+        addclass
+      ></div>
+      <div class="absolute flex justify-center items-center z-20 tra" addclass1>
+        <div
+          class="backdrop-blur-[10px] bg-[#00000088] p-3 px-5 border-[#ffffff30] rounded-xl border-solid border-[2px] flex flex-col space-y-4 tra"
+        >
+          <div
+            class="flex justify-between items-center border-b-[1px] pb-3 border-b-[#ffffff88] tra"
+          >
+            <h1 class="text-white font-[500] text-3xl tracking-[1px]">
+              Share My Profile
+            </h1>
+            <button cancle>
+              <i
+                class="fa-solid fa-xmark text-white font-[500] text-3xl tracking-[1px]"
+              ></i>
+            </button>
+          </div>
+
+          <h2 class="text-white font-[500] text-lg tracking-[1px] pb-5 tra">
+            Share this via
+          </h2>
+          <div class="flex justify-evenly space-x-12 pb-6 tra">
+            <!-- whatsapp -->
+            <div
+              class="rounded-full hover:bg-[#25D366] w-[65px] h-[65px] flex justify-center items-center border-[#25D366] border-[2px] border-solid group cursor-pointer transition-all duration-300 ease-linear"
+            >
+              <i
+                class="fa-brands fa-whatsapp text-[#25D366] font-[500] text-2xl group-hover:text-white"
+              ></i>
+            </div>
+            <!-- facebook -->
+            <div
+              class="rounded-full hover:bg-[#3b5998] w-[65px] h-[65px] flex justify-center items-center border-[#3b5998] border-[2px] border-solid group cursor-pointer transition-all duration-300 ease-linear"
+            >
+              <i
+                class="fa-brands fa-facebook-f text-[#3b5998] font-[500] text-2xl group-hover:text-white"
+              ></i>
+            </div>
+            <!-- twitter -->
+            <div
+              class="rounded-full hover:bg-[#00acee] w-[65px] h-[65px] flex justify-center items-center border-[#00acee] border-[2px] border-solid group cursor-pointer transition-all duration-300 ease-linear"
+            >
+              <i
+                class="fa-brands fa-twitter text-[#00acee] font-[500] text-2xl group-hover:text-white"
+              ></i>
+            </div>
+            <!-- insta -->
+            <div
+              class="rounded-full hover:bg-[#E1306C] w-[65px] h-[65px] flex justify-center items-center border-[#E1306C] border-[2px] border-solid group cursor-pointer transition-all duration-300 ease-linear"
+            >
+              <i
+                class="fa-brands fa-instagram text-[#E1306C] font-[500] text-2xl group-hover:text-white"
+              ></i>
+            </div>
+            <!-- telegram -->
+            <div
+              class="rounded-full hover:bg-[#0088cc] w-[65px] h-[65px] flex justify-center items-center border-[#0088cc] border-[2px] border-solid group cursor-pointer transition-all duration-300 ease-linear"
+            >
+              <i
+                class="fa-brands fa-telegram text-[#0088cc] font-[500] text-2xl group-hover:text-white"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/615660aad9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

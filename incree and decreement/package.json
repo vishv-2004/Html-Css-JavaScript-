@@ -1,0 +1,16 @@
+{
+  "name": "incree-and-decreement",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "v": "^0.3.0",
+    "vite": "^4.1.4"
+  }
+}

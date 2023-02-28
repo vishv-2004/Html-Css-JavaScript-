@@ -48,7 +48,7 @@ function extra1() {
   Array.from(content).forEach((e, outerindex) => {
     let innercontent = e.querySelectorAll(".row_member1");
     Array.from(innercontent).forEach((Element, innerindex) => {
-      Element.addEventListener("change", () => {
+      Element.addEventListener("input", () => {
         let thisrun = parseInt(Element.value);
         if (!isNaN(thisrun) && thisrun < 0 && thisrun > -3) {
           let newelement = document.createElement("input");
@@ -218,7 +218,7 @@ function thirdid1(
 ) {
   let content = document.querySelector(".overcontainer1");
   document.getElementById("teamname1").textContent = ans1;
-  content.addEventListener("mousemove", () => {
+  content.addEventListener("input", () => {
     allvalue1(
       wideball,
       noball,
@@ -301,7 +301,7 @@ function extra() {
   Array.from(content).forEach((e, outerindex) => {
     let innercontent = e.querySelectorAll(".row_member");
     Array.from(innercontent).forEach((Element, innerindex) => {
-      Element.addEventListener("change", () => {
+      Element.addEventListener("input", () => {
         let thisrun = parseInt(Element.value);
         if (!isNaN(thisrun) && thisrun < 0 && thisrun > -3) {
           let newelement = document.createElement("input");
@@ -368,7 +368,7 @@ function allvalue(wideball, noball) {
 }
 function thirdid(wideball, noball) {
   let content = document.querySelector(".overcontainer");
-  content.addEventListener("mousemove", () => {
+  content.addEventListener("input", () => {
     allvalue(wideball, noball);
   });
 }
@@ -413,5 +413,12 @@ document.getElementById("subButton").addEventListener("click", () => {
   var over = document.getElementById("over").value;
   var wideball = document.getElementById("wide_yes").value;
   var noball = document.getElementById("noball_yes").value;
+  if(teama && teamb )
+  {
   index2(teama, teamb, over, wideball, noball);
+  }
+  else
+  {
+    alert("Plzz Fill The Team Name .");
+  }
 });

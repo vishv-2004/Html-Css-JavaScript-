@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.contianer {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+.ani1 {
+  animation: topleft 10s linear infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes topleft {
+  0% {
+    top: 3%;
+    left: 30%;
+  }
+  50% {
+    top: 2%;
+    left: 32%;
+  }
+  100% {
+    top: 3%;
+    left: 30%;
+  }
+}
+.ani2 {
+  animation: topleft1 10s linear infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes topleft1 {
+  0% {
+    bottom: 3%;
+    right: 30%;
+  }
+  50% {
+    bottom: 2%;
+    right: 32%;
+  }
+  100% {
+    bottom: 3%;
+    right: 30%;
+  }
+}
+.activen {
+  scale: 0;
+}
+.activey {
+  scale: 1;
+}
+.tra {
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}

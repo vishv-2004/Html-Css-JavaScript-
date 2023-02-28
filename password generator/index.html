@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PassWord Generator</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div
+      class="wrapper"
+      style="
+        background: linear-gradient(
+          231deg,
+          rgba(22, 6, 40, 1) 0%,
+          rgba(52, 28, 79, 1) 50%,
+          rgba(88, 7, 125, 1) 100%
+        );
+      "
+    >
+      <div
+        class="card-container flex items-center justify-center flex-col max-w-[450px] mx-auto h-[100%] w-[90%] space-y-4"
+      >
+        <!-- frist part -->
+        <h1 class="text-3xl text-white font-[600] tracking-[1px]">
+          PASSWORD GENERATOR
+        </h1>
+        <!-- second part -->
+        <div
+          class="flex justify-between items-center w-[90%] max-w-[400px] bg-dk-violet px-4 rounded-lg showpass pb-2 relative border-b-[6px] border-vb-violet2"
+        >
+          <input
+            id="changevalue"
+            readonly
+            name="PassWord"
+            placeholder="Password"
+            class="outline-none bg-dk-violet leading-[3rem] pt-2 min-w-[90%]"
+          />
+          <!-- removeed activen -->
+          <p
+            class="absolute -right-[3%] text-vb-yellow bg-lt-violet2 pb-2 px-3 rounded-2xl font-[500] -top-[25%] activen transition-all duration-300"
+          >
+            Copied
+          </p>
+          <button><i class="fa-solid fa-copy text-vb-cyan"></i></button>
+        </div>
+        <!-- third part -->
+        <div
+          class="flex flex-col w-[90%] max-w-[400px] space-y-3 bg-dk-violet py-3 px-5 rounded-lg border-b-[6px] border-vb-violet2"
+        >
+          <!-- password length -->
+          <div class="flex justify-between items-center py-3">
+            <h2 class="text-white text-xl font-[500] tracking-[1px]">
+              Password Length
+            </h2>
+            <p
+              slidervalueshow
+              class="text-vb-yellow text-xl font-[600] traking-[1px]"
+            >
+              10
+            </p>
+          </div>
+          <!-- slider -->
+          <input
+            type="range"
+            id="passwordlengthslider"
+            min="1"
+            max="20"
+           value="10"
+            class="cursor-pointer"
+          />
+          <!-- chekboxs -->
+          <div class="flex w-[90%] max-w-[305px] flex-col space-y-1">
+            <!-- check box 1 -->
+            <div
+              class="cursor-pointer flex items-center justify-starts space-x-4 relative"
+            >
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="uppercase"
+                class="my-1 self-end cursor-pointer"
+                checked
+                checkbox
+              />
+              <label
+                for="uppercase"
+                class="text-lg cursor-pointer text-center text-white"
+                >include UpperCase letter</label
+              >
+            </div>
+            <!-- check box 2 -->
+            <div
+              class="cursor-pointer flex items-center justify-starts space-x-4 relative"
+            >
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="lowercase"
+                class="my-1 self-end cursor-pointer"
+                checkbox
+              />
+              <label
+                for="lowercase"
+                class="text-lg cursor-pointer text-center text-white"
+                >include LowerCase letter</label
+              >
+            </div>
+            <!-- check box 3 -->
+            <div
+              class="cursor-pointer flex items-center justify-starts space-x-4 relative"
+            >
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="Numbers"
+                class="my-1 self-end cursor-pointer"
+                checkbox
+              />
+              <label
+                for="Numbers"
+                class="text-lg cursor-pointer text-center text-white"
+                >include Numbers</label
+              >
+            </div>
+            <!-- check box 4 -->
+            <div
+              class="cursor-pointer flex items-center justify-starts space-x-4 relative"
+            >
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="Symobls"
+                class="my-1 self-end cursor-pointer"
+                checkbox
+              />
+              <label
+                for="Symobls"
+                class="text-lg cursor-pointer text-center text-white"
+                >include Symobls</label
+              >
+            </div>
+          </div>
+          <!-- strength -->
+          <div class=" max-w-[400px] flex justify-between items-center py-3">
+            <div>
+              <h1 class="text-lg font-[500]  text-white tracking-[1px]">Strength</h1>
+            </div>
+            <div
+              class="w-[20px] h-[20px] rounded-full bg-[#ccce]"
+              style="box-shadow: #ccce 0px 0px 12px 1px"
+              id="strength"
+            ></div>
+            <!-- box shadow baki -->
+          </div>
+          <div class="w-[100%] pb-5">
+            <button
+              class="bg-vb-violet rounded-md py-2 px-3 w-[100%] capitalize text-vb-yellow font-[700] text-lg tracking-[1px] border-b-[6px] border-vb-yellow leading-8"
+              mainbutton
+            >
+              GENERATE PASSWORD
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/615660aad9.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
