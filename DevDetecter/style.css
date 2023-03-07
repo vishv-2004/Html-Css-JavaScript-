@@ -1,0 +1,191 @@
+:root {
+  --lm-bg: #f6f8ff;
+  --lm-bg-content: #fefefe;
+  --lm-text: #4b6a9b;
+  --lm-text-alt: #2b3442;
+  --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+  --lm-icon-bg: brightness(100%);
+  --btn: #0079ff;
+  --btn-hover: #60abff;
+  --normal-text: #000000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+.container {
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: var(--lm-bg);
+}
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.top {
+  margin-block: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.top h2 {
+  font-size: 1.7rem;
+  color: var(--lm-text);
+}
+.lightordark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.lightordark:hover {
+  cursor: pointer;
+}
+.lightordark p {
+  letter-spacing: 2px;
+  font-size: small;
+  color: var(--lm-text);
+  font-weight: 600;
+}
+.lightordark img {
+  font-size: 23px;
+  color: var(--lm-text);
+  transform: rotate(343deg);
+}
+.searchbar {
+  background-color: var(--lm-bg-content);
+  box-shadow: var(--lm-shadow);
+  border-radius: 15px;
+  position: relative;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  padding-left: 4rem;
+  padding-block: 0.5rem;
+}
+.searchbar i {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 4%;
+  translate: -50% -50%;
+  color:var(--btn);
+}
+.searchbar input {
+  all: unset;
+  font-size: 18px;
+  width: 90%;
+  color: var(--normal-text);
+}
+.searchbar button {
+  border: none;
+  padding: 14px 28px;
+  border-radius: 13px;
+  margin-right: 0.8rem;
+  background-color: var(--btn);
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+
+}
+.searchbar button:hover{
+  background-color: var(--btn-hover);
+}
+.not-found {
+  right: 20%;
+  color: red;
+}
+.serchresult{
+  background-color: var(--lm-bg-content);
+  box-shadow: var(--lm-shadow);
+  margin-top: 1.5rem;
+  border-radius: 15px;
+  padding: 3rem 3rem;
+}
+.profilecontent1{
+  display: flex;
+  gap: 2rem;
+}
+a[profile-link]{
+  color: var(--btn);
+}
+img[profileImage]
+{
+  border-radius: 100%;
+  width: 150px;
+}
+h2[profile-name]{
+  font-size: 1.7rem;
+  color: var(--normal-text);
+}
+.fristpart{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.profilecontent{
+  width: 100%;
+}
+.joined-date{
+  color: var(--lm-text);
+}
+.secondpart{
+  width: 100%;
+}
+.aboutprofile{
+  max-width: 339px;
+  color:  var(--lm-text);
+  margin-top: 1rem;
+  font-size: 15px;
+}
+.thirdpart{
+  padding: 1rem 1.5rem;
+  margin-block: 2rem;
+  background-color: var(--lm-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+ 
+  gap: 8px;
+}
+.box :first-child{
+  color: var(--lm-text);
+}
+
+.repos-number,.followes-number,.following-number{
+  color: var(--normal-text);
+}
+.fourthpart{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  row-gap: 1.5rem;
+  justify-content: end;
+  
+}
+.box1{
+  min-width: 200px;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.blog-link,.location,.twitter,.company-name{
+  overflow-wrap: anywhere;
+  color: var(--lm-text);
+
+}
+.not{
+  color:#9fabbc
+}
+:root{
+  
+}

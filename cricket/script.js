@@ -77,7 +77,7 @@ function remainrun(
   dotball,
   wicket
 ) {
-  let remain = fristteamrun - run;
+  let remain = fristteamrun - run + 1;
   if (remain > 0 ) {
     document.getElementById("needrun").textContent = remain;
   } else {
@@ -97,24 +97,45 @@ function remainrun(
       wicket
     );
   }
-  if(apducounter==1)
-  {
-    winning(
-      fristteamrun,
-      run,
-      ans1,
-      ans,
-      fristteamwicket,
-      fristteamnoball,
-      fristteamwideball,
-      fristteamdotball,
-      remain,
-      noballdisplay,
-      wideballdisplay,
-      dotball,
-      wicket
-    );
-  }
+  document.getElementById("winning").addEventListener("click", () => {
+    if (confirm("Yor are fill the all run field ?")) {
+      winning(
+        fristteamrun,
+        run,
+        ans1,
+        ans,
+        fristteamwicket,
+        fristteamnoball,
+        fristteamwideball,
+        fristteamdotball,
+        remain,
+        noballdisplay,
+        wideballdisplay,
+        dotball,
+        wicket
+      );
+    }
+  });
+  // if(apducounter==1)
+  // {
+  //   winning(
+  //     fristteamrun,
+  //     run,
+  //     ans1,
+  //     ans,
+  //     fristteamwicket,
+  //     fristteamnoball,
+  //     fristteamwideball,
+  //     fristteamdotball,
+  //     remain,
+  //     noballdisplay,
+  //     wideballdisplay,
+  //     dotball,
+  //     wicket
+  //   );
+   
+  // }
+
   // document.getElementById("winning").addEventListener("click", () => {
   //   if (confirm("Yor are fill the all run field ?")) {
   //     winning(
@@ -231,11 +252,7 @@ function thirdid1(
       fristteamdotball
     );
   });
-  document.getElementById("winning").addEventListener("click", () => {
-    if (confirm("Yor are fill the all run field ?")) {
-     apducounter = 1;
-    }
-  });
+  
 }
 function overset1(over) {
   over = parseInt(over);

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <meta name="keywords" content="find git repos , git repos" />
+    <meta
+      name="description"
+      content="This is show a information about git repos"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dev-Dectective</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="top">
+          <h2>DevDectective</h2>
+          <div class="lightordark">
+            <p darktext>DARK</p>
+            <img src="assets/images/moon-icon.svg" alt="" darksvg>
+            
+          </div>
+        </div>
+        <div class="searchbar">
+          <i class="fa-solid fa-magnifying-glass searchicone"></i>
+          <input
+            type="search"
+            class="inputfield"
+            id="search"
+            name="user-input"
+            title="please fill out this field"
+            placeholder="Enter a Github Username..."
+            required
+          />
+          <p class="not-found" style="display: none; position: absolute">
+            User not found
+          </p>
+          <!-- for button prevent default -->
+          <button class="btn" id="searchbutton">Search</button>
+        </div>
+        <div class="serchresult">
+          <div class="profilecontent1">
+            <div class="imagediv">
+              <img profileImage />
+            </div>
+            <div class="profilecontent">
+              <div class="fristpart">
+                <div class="nameandlink">
+                  <h2 profile-name></h2>
+                  <a profile-link target="_blank" href="#"></a>
+                </div>
+                <div>
+                  <p class="joined-date"></p>
+                </div>
+              </div>
+              <div class="secondpart">
+                <p class="aboutprofile"></p>
+              </div>
+              <div class="thirdpart">
+                <!-- repos -->
+                <div class="repos-container box">
+                  <p>Repos</p>
+                  <p class="repos-number"></p>
+                </div>
+                <!-- Followers -->
+                <div class="followers-container box">
+                  <p>Followers</p>
+                  <p class="followes-number"></p>
+                </div>
+                <!-- following -->
+                <div class="following-container box">
+                  <p>Following</p>
+                  <p class="following-number"></p>
+                </div>
+              </div>
+              <div class="fourthpart">
+                <div class="profile-location box1">
+                  <img src="assets/images/location-icon.svg" alt="" />
+                  <p class="location"></p>
+                </div>
+                <div class="box1">
+                  <img src="assets/images/website-icon.svg" alt="" />
+                  <a class="blog-link" href="#" target="_blank"></a>
+                </div>
+                <div class="box1">
+                  <img src="assets/images/twitter-icon.svg" alt="" />
+                  <a class="twitter" href="#" target="_blank"></a>
+                </div>
+                <div class="box1">
+                  <img src="assets/images/company-icon.svg" alt="" />
+                  <p class="company-name"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/615660aad9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

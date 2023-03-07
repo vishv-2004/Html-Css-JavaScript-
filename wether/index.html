@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-app</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700;900&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container1">
+      <div class="content">
+        <h1
+          class="text-center font-[500] mt-14 text-4xl text-white tracking-[1px]"
+        >
+          WETHER APP
+        </h1>
+        <!-- frist page -->
+
+        <!-- two buttons are there Your and Search -->
+        <div class="flex max-w-[500px] justify-between mx-auto mt-14">
+          <div class="">
+            <button
+              user-wether
+              class="tracking-[1px] px-[0.4rem] py-[1px] rounded-md leading-7 text-white"
+            >
+              Your Wether
+            </button>
+          </div>
+          <div>
+            <button
+              search-wehter
+              class="tracking-[1px] px-[0.4rem] py-[1px] rounded-md leading-7 text-white"
+            >
+              Search Wether
+            </button>
+          </div>
+        </div>
+        <!-- grant location -->
+        <div
+          class="max-w-[400px] mx-auto justify-center flex-col activen mt-16"
+          grant-access
+        >
+          <img
+            src="images/location.png"
+            alt=""
+            width="80"
+            height="80"
+            class="mx-auto"
+          />
+          <h1
+            class="text-center mt-10 text-3xl text-white font-[500] tracking-[1px]"
+          >
+            Grant Location Access
+          </h1>
+          <p class="text-center mt-3 text-white opacity-90">
+            Allow Access To Get Wether Information
+          </p>
+          <div class="w-[100%] flex justify-center items-center">
+            <button
+              class="mt-5 bg-[#3f72af] text-white px-3 py-2 rounded-lg btn mx-auto"
+              grant-access-btn
+            >
+              GRANT ACCESS
+            </button>
+          </div>
+        </div>
+        <div class="">
+          <form form-container class="mt-10 mx-auto activen">
+            <div
+              class="w-[100%] max-w-[500px] flex justify-center items-center mx-auto"
+            >
+              <input
+                placeholder="Search For City"
+                class="w-[90%] px-2 py-[0.4rem] rounded-lg mx-auto ch text-white text-lg"
+                data-searchinput
+              />
+              <button>
+                <i
+                  class="fa-solid fa-magnifying-glass text-white bg-[#3f72af] p-[0.6rem] rounded-full"
+                ></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- activen -->
+        <div class="activen" loading-screen>
+          <div
+            class="text-center mt-10 mx-auto flex justify-center items-center"
+          >
+            <img src="images/loading.gif" alt="" width="200" />
+          </div>
+        </div>
+        <div class="activen" not-found>
+          <img
+            src="images/not-found.png"
+            alt=""
+            width="300px"
+            class="mt-5 mx-auto"
+          />
+        </div>
+        <!-- second page user location wether page -->
+        <!-- content showing of the wether -->
+        <div wethershowing-container class="activen">
+          <div class="flex flex-col space-y-4">
+            <div class="flex mt-7 justify-center items-center">
+              <p city-name class="text-center text-[3vw] text-white"></p>
+              <img country-flag class="w-[50px] ml-[1rem]"/>
+            </div>
+            <p
+              class="text-center text-white tracking-[1px] text-2xl capitalize"
+              wether-desc
+            ></p>
+            <img wether-image class="w-[80px] mx-auto" />
+            <div class="flex justify-center">
+              <h1 temp class="text-center text-5xl text-white"></h1>
+              <span class="text-center text-5xl text-white">
+                <sup>o</sup>C</span
+              >
+            </div>
+            <!-- showing the content of the windspeed humidity clouds -->
+            <div class="flex space-x-10 max-w-[700px] mx-auto">
+              <div
+                class="flex flex-col bg-[rgba(219,226,239,0.5)] py-[1rem] px-[1.5rem] justify-center items-center space-y-1 rounded-md mb-5 w-[200px] mt-[3rem]"
+              >
+                <img src="images/wind.png" width="55" />
+                <p class="text-2xl text-white tracking-[1px]">WINDSPEED</p>
+                <p windspeed-value class="text-2xl text-white"></p>
+              </div>
+              <div
+                class="flex flex-col bg-[rgba(219,226,239,0.5)] py-[1rem] px-[1.5rem] justify-center items-center space-y-1 rounded-md mb-5 w-[200px] mt-[3rem]"
+              >
+                <img src="images/humidity.png" width="55" />
+                <p class="text-2xl text-white tracking-[1px]">HUMIDITY</p>
+                <p humidity-value class="text-2xl text-white"></p>
+              </div>
+              <div
+                class="flex flex-col bg-[rgba(219,226,239,0.5)] py-[1rem] px-[1.5rem] justify-center items-center space-y-1 rounded-md mb-5 w-[200px] mt-[3rem]"
+              >
+                <img src="images/cloud.png" width="55" />
+                <p class="text-2xl text-white tracking-[1px]">CLOUDS</p>
+                <p clouds-value class="text-2xl text-white"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- third screen -->
+
+        <!-- loading screnn -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/615660aad9.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
